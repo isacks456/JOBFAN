@@ -1,0 +1,619 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.header {
+    background-color: rgba(24, 22, 22, 0.8);
+}
+
+.header .container {
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 300px;
+}
+
+.header .container .logo > a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: rgb(219, 226, 199);
+    font-weight: bold;
+}
+
+.header .container .spanHeader > span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.header .container .spanHeader > span > a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgb(219, 226, 199);
+}
+
+section {
+
+    .container4 {
+        max-width: 1360px;
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 300px;
+    }
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fdffff;
+    width: 100%;
+
+    h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  }
+
+  label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+  }
+
+  input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  button:hover {
+    background: #0056b3;
+  }
+
+}
+
+footer {
+    background-color: #000;
+    color: #ffffff;
+    width: 100%;
+}
+
+.footer {
+    max-width: 1360px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px 20px;
+}
+
+.footer_logo {
+    padding: 0;
+}
+
+.footer_logo > p:first-child {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer_contacts {
+    padding: 0;
+    text-align: right;
+}
+
+.footer_contacts p {
+    margin: 5px 0;
+}
+
+.footer_bottom {
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #333; 
+    font-size: 14px;
+}
+
+
+@media (max-width: 1400px) {
+    .header .container {
+        gap: 150px;
+        padding: 20px 40px;
+    }
+    
+    section .container4 {
+        gap: 150px;
+        padding: 20px 40px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .header .container {
+        gap: 100px;
+    }
+    
+    .header .container .spanHeader > span {
+        gap: 20px;
+    }
+    
+    .header .container .spanHeader > span > a {
+        font-size: 1.3rem;
+    }
+    
+    section .container4 {
+        gap: 100px;
+    }
+    
+    section form {
+        max-width: 550px;
+        padding: 25px;
+    }
+}
+
+@media (max-width: 992px) {
+    .header .container {
+        gap: 50px;
+        padding: 15px 30px;
+    }
+    
+    .header .container .logo > a {
+        font-size: 1.3rem;
+    }
+    
+    .header .container .spanHeader > span {
+        gap: 15px;
+    }
+    
+    .header .container .spanHeader > span > a {
+        font-size: 1.2rem;
+    }
+    
+    section .container4 {
+        gap: 50px;
+        padding: 15px 30px;
+    }
+    
+    section form {
+        max-width: 500px;
+        padding: 25px;
+    }
+    
+    section h1 {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+    }
+    
+    section label {
+        font-size: 1rem;
+    }
+    
+    section input, 
+    section textarea, 
+    section select {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px 20px;
+    }
+    
+    .header .container .spanHeader > span {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .header .container .spanHeader > span > a {
+        font-size: 1.1rem;
+    }
+    
+    section .container4 {
+        gap: 30px;
+        padding: 10px 20px;
+    }
+    
+    section form {
+        max-width: 100%;
+        padding: 20px;
+        margin: 0 15px;
+    }
+    
+    section h1 {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+    
+    section label {
+        margin-top: 12px;
+        font-size: 0.95rem;
+    }
+    
+    section input, 
+    section textarea, 
+    section select {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    section button {
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+    
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .footer_logo {
+        text-align: center;
+    }
+    
+    .footer_contacts {
+        text-align: center;
+    }
+    
+    .footer_contacts p {
+        margin: 8px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .header .container {
+        padding: 10px 15px;
+        gap: 15px;
+    }
+    
+    .header .container .logo > a {
+        font-size: 1.2rem;
+    }
+    
+    .header .container .spanHeader > span {
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .header .container .spanHeader > span > a {
+        font-size: 0.9rem;
+        padding: 5px 8px;
+    }
+    
+    section {
+        padding: 20px 0;
+    }
+    
+    section .container4 {
+        padding: 0 10px;
+        gap: 20px;
+    }
+    
+    section form {
+        padding: 20px 15px;
+        margin: 0;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    
+    section h1 {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+    }
+    
+    section label {
+        margin-top: 12px;
+        font-size: 0.9rem;
+    }
+    
+    section input, 
+    section textarea, 
+    section select {
+        padding: 12px 10px;
+        font-size: 15px;
+        border-radius: 6px;
+        border: 1px solid #ddd;
+    }
+    
+    section textarea {
+        min-height: 80px;
+    }
+    
+    section input[type="file"] {
+        padding: 8px;
+        font-size: 14px;
+    }
+    
+    section button {
+        margin-top: 25px;
+        padding: 14px 20px;
+        font-size: 1rem;
+        border-radius: 6px;
+        font-weight: 500;
+    }
+    
+    .footer_logo > p:first-child {
+        font-size: 1.2rem;
+    }
+    
+    .footer_logo > p:last-child {
+        font-size: 0.9rem;
+    }
+    
+    .footer_contacts p {
+        font-size: 0.9rem;
+    }
+    
+    .footer_bottom {
+        font-size: 0.8rem;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 375px) {
+    .header .container .spanHeader > span {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 5px;
+    }
+    
+    .header .container .spanHeader > span > a {
+        width: 100%;
+        text-align: center;
+        padding: 8px;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    .header .container .spanHeader > span > a:last-child {
+        border-bottom: none;
+    }
+    
+    section form {
+        padding: 15px 12px;
+    }
+    
+    section h1 {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+    }
+    
+    section label {
+        font-size: 0.85rem;
+        margin-top: 10px;
+    }
+    
+    section input, 
+    section textarea, 
+    section select {
+        padding: 10px 8px;
+        font-size: 14px;
+    }
+    
+    section button {
+        padding: 12px 15px;
+        font-size: 0.95rem;
+    }
+    
+    .footer_contacts p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) and (orientation: portrait) {
+    section form {
+        max-width: 90%;
+    }
+}
+
+@media (max-height: 700px) {
+    section {
+        padding: 30px 0;
+    }
+    
+    section form {
+        padding: 20px;
+    }
+    
+    section label {
+        margin-top: 8px;
+    }
+    
+    section input, 
+    section textarea, 
+    section select {
+        padding: 8px;
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    section form {
+        box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    }
+}
+
+@media (min-width: 2000px) {
+    .container,
+    .header .container,
+    section .container4,
+    .footer {
+        max-width: 1800px;
+    }
+    
+    section form {
+        max-width: 800px;
+        padding: 40px;
+    }
+    
+    section h1 {
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+    }
+    
+    section label {
+        font-size: 1.2rem;
+        margin-top: 20px;
+    }
+    
+    section input, 
+    section textarea, 
+    section select {
+        padding: 15px;
+        font-size: 1.1rem;
+        border-radius: 8px;
+    }
+    
+    section button {
+        padding: 18px 30px;
+        font-size: 1.2rem;
+        margin-top: 30px;
+        border-radius: 8px;
+    }
+    
+    .footer_logo > p:first-child {
+        font-size: 2rem;
+    }
+    
+    .footer_contacts p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    section {
+        background-color: #1a1a1a;
+    }
+    
+    section form {
+        background: #2d2d2d;
+        box-shadow: 0 3px 10px rgba(255,255,255,0.05);
+    }
+    
+    section h1,
+    section label {
+        color: #ffffff;
+    }
+    
+    section input, 
+    section textarea, 
+    section select {
+        background-color: #3d3d3d;
+        border-color: #555;
+        color: #ffffff;
+    }
+    
+    section input::placeholder,
+    section textarea::placeholder {
+        color: #aaa;
+    }
+    
+    section select option {
+        background-color: #3d3d3d;
+        color: #ffffff;
+    }
+    
+    section button {
+        background: #4a6cf7;
+    }
+    
+    section button:hover {
+        background: #3a5ce5;
+    }
+}
+
+@media (hover: none) {
+    section input, 
+    section textarea, 
+    section select,
+    section button {
+        font-size: 16px;
+    }
+    
+    section button {
+        min-height: 48px;
+    }
+}
+
+@media (max-width: 768px) {
+    section input:focus,
+    section textarea:focus,
+    section select:focus {
+        outline: none;
+        border-color: #007bff;
+        box-shadow: 0 0 0 3px rgba(0,123,255,0.25);
+    }
+}
+
+@media print {
+    .header,
+    footer,
+    section button {
+        display: none;
+    }
+    
+    section form {
+        box-shadow: none;
+        border: 1px solid #000;
+        padding: 20px;
+    }
+    
+    section input, 
+    section textarea, 
+    section select {
+        border: 1px solid #000;
+        background: none;
+    }
+}
