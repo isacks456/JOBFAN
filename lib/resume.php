@@ -68,7 +68,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   
     try {
-        $pdo = new PDO('mysql:host=localhost;dbname=jobfan;port=8889', 'root', 'root');
+        $pdo = new PDO('mysql:host=localhost;dbname=????;port=8889', '???', '???');
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         
         $sql = 'INSERT INTO users(fullname, email, phone, experience, skills, resume_file, job) VALUES(?, ?, ?, ?, ?, ?, ?)';
